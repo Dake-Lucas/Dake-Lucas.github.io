@@ -14,56 +14,57 @@
         Use the buttons to create a photo and try to find the hidden suprise!
     </p1>
     <p1 id = paragraph_2>
-        <br>
         <button onclick="AddBackSlash()">Add \</button>
         <button onclick="AddDot()">Add .</button>
         <button onclick="AddDash()">Add -</button>
         <button onclick="AddColon()">Add :</button>
         <button onclick="AddForwardSlash()">Add /</button>
-         <button onclick="ChangeColor()">Change Color</button>
+        <button onclick="ChangeColor()">Change Color</button>
         <button onclick="AddNewLine()">Add New Line</button>
         <button onclick="ResetText()">Reset Text</button>
         <br>
     </p1>
-    <p3 id = image_paragraph></p3>
+    <p3 id = image_paragraph>
+        <div id = image_panel></div>
+    </p3>
 </body>
 </html>
 <script>
 function AddBackSlash() {
-    document.getElementById("image_paragraph").textContent += "\\";
+    document.getElementById("image_panel").textContent += "\\";
     didSolvedPuzzle()
 }
 function AddDot() {
-    document.getElementById("image_paragraph").textContent += ".";
+    document.getElementById("image_panel").textContent += ".";
     didSolvedPuzzle()
 }
 function AddDash() {
-    document.getElementById("image_paragraph").textContent += "-";
+    document.getElementById("image_panel").textContent += "-";
     didSolvedPuzzle()
 }
 function AddColon() {
-    document.getElementById("image_paragraph").textContent += ":";
+    document.getElementById("image_panel").textContent += ":";
     didSolvedPuzzle()
 }
 function AddForwardSlash() {
-    document.getElementById("image_paragraph").textContent += "/";
+    document.getElementById("image_panel").textContent += "/";
     didSolvedPuzzle()
 }
 function AddNewLine() {
-    document.getElementById("image_paragraph").textContent += "\n";
+    document.getElementById("image_panel").textContent += "\n";
     didSolvedPuzzle()
 }
 
 function ChangeColor() {
-    document.getElementById("image_paragraph").style.color = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+    document.getElementById("image_panel").style.color = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
 }
 function ResetText() {
-    document.getElementById("image_paragraph").textContent = "";
+    document.getElementById("image_panel").textContent = "";
     didSolvedPuzzle()
 }
 function didSolvedPuzzle()
 {
-    if(document.getElementById("image_paragraph").textContent == ":-")
+    if(document.getElementById("image_panel").textContent == "\\/\n..\n--")
     {
         openNewPage();
     }
