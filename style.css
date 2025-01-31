@@ -23,14 +23,13 @@ p1 {
     font-size: 40px;
     font-family: monospace; /* Use a monospace font for consistent character width */
     line-height: 1;         /* Reduce line height to minimize spacing */
-    white-space: pre-wrap;  /* Preserve newlines and allow wrapping */
 }
 button {
   font-size: 25px;
   text-align: center;
   margin-top: 15px;
   margin-right: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   margin-left: 10px;
 }
 #image_panel {
