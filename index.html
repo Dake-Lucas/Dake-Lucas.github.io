@@ -25,64 +25,49 @@
         <button onclick="ResetText()">Reset Text</button>
         <br>
     </p2>
-    <p3 id = image_paragraph>
-    </p3>
+    <p3 id = image_paragraph></p3>
 </body>
 </html>
 
 <script>
 function AddBackSlash() {
     document.getElementById("image_paragraph").textContent += "\\";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    didSolvedPuzzle()
 }
 function AddDot() {
     document.getElementById("image_paragraph").textContent += ".";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    didSolvedPuzzle()
 }
 function AddDash() {
     document.getElementById("image_paragraph").textContent += "-";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    didSolvedPuzzle()
 }
 function AddColon() {
     document.getElementById("image_paragraph").textContent += ":";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    didSolvedPuzzle()
 }
 function AddForwardSlash() {
     document.getElementById("image_paragraph").textContent += "/";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    didSolvedPuzzle()
 }
 function AddNewLine() {
     document.getElementById("image_paragraph").textContent += "\n";
-    document.getElementById("image_paragraph").style.whiteSpace = "pre-wrap";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    didSolvedPuzzle()
 }
 function ChangeColor() {
     document.getElementById("image_paragraph").style.color = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
 }
 function ResetText() {
     document.getElementById("image_paragraph").textContent = "";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
+    didSolvedPuzzle()
+}
+function didSolvedPuzzle()
+{
+    if(document.getElementById("image_paragraph").textContent == ":-:\n:-:")
     {
-        alert("You solved it!");
+        openNewPage();
     }
+    
 }
 function openNewPage() {
   window.open("win.html", "_blank");

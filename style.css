@@ -6,7 +6,9 @@ h1 {
   color: #333;
   text-align: center;
 }
-p3 {
-     font-size: 25px;
-  text-align: center;
+#image_paragraph {
+    font-size: 40px;
+    font-family: monospace; /* Use a monospace font for consistent character width */
+    line-height: 1;         /* Reduce line height to minimize spacing */
+    white-space: pre-wrap;  /* Preserve newlines and allow wrapping */
 }
