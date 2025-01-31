@@ -8,20 +8,44 @@
 </head>
 <body>
     <h1>
-        Introduction
+        Create An Image!
     </h1>
     <p1 id = "paragraph_1">
-
-        Testing some things
+        Use the buttons to create a photo and try to find the hidden suprise!
     </p1>
-    <button onclick="doSomething()">Click Me</button>
-
-    
+    <p2 id = paragraph_2>
+        <button onclick="AddBackSlash()">Add \</button>
+        <button onclick="AddDot()">Add .</button>
+        <button onclick="AddDash()">Add -</button>
+        <button onclick="AddColon()">Add :</button>
+        <button onclick="AddForwardSlash()">Add /</button>
+        <button onclick="ResetText()">Reset Text</button>
+    </p2>
+    <p3 id = image_paragraph>
+    </p3>
 </body>
 </html>
 
 <script>
-function doSomething() {
+function AddBackSlash() {
+    document.getElementById("image_paragraph").textContent += "\\";
+}
+function AddDot() {
+    document.getElementById("paragraph_1").style.color = "red";
+}
+function AddDash() {
+    document.getElementById("paragraph_1").style.color = "red";
+}
+function AddDash() {
+    document.getElementById("paragraph_1").style.color = "red";
+}
+function AddColon() {
+    document.getElementById("paragraph_1").style.color = "red";
+}
+function AddForwardSlash() {
+    document.getElementById("paragraph_1").style.color = "red";
+}
+function ResetText() {
     document.getElementById("paragraph_1").style.color = "red";
 }
 </script>
