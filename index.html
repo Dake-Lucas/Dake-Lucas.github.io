@@ -24,12 +24,11 @@
         <button onclick="AddNewLine()">Add New Line</button>
         <button onclick="ResetText()">Reset Text</button>
         <br>
-    </p2>
+    </p1>
     <p3 id = image_paragraph></p3>
 </body>
 </html>
 <script>
-   
 function AddBackSlash() {
     document.getElementById("image_paragraph").textContent += "\\";
     didSolvedPuzzle()
@@ -64,13 +63,13 @@ function ResetText() {
 }
 function didSolvedPuzzle()
 {
-    if(document.getElementById("image_paragraph").textContent == ":-:\n:-:")
+    if(document.getElementById("image_paragraph").textContent == ":-")
     {
         openNewPage();
     }
     
 }
-function openSolvedPage() {
+function openNewPage() {
   window.open("win.html", "_blank");
 }
 </script>
