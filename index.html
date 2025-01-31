@@ -29,62 +29,46 @@
     </p3>
 </body>
 </html>
-
 <script>
+   
 function AddBackSlash() {
     document.getElementById("image_paragraph").textContent += "\\";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    isSolved();
 }
 function AddDot() {
-    document.getElementById("image_paragraph").textContent += ".";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+   isSolved();
 }
 function AddDash() {
     document.getElementById("image_paragraph").textContent += "-";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    isSolved();
 }
 function AddColon() {
     document.getElementById("image_paragraph").textContent += ":";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    isSolved();
 }
 function AddForwardSlash() {
     document.getElementById("image_paragraph").textContent += "/";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    isSolved();
 }
 function AddNewLine() {
     document.getElementById("image_paragraph").textContent += "\n";
     document.getElementById("image_paragraph").style.whiteSpace = "pre-wrap";
-    if(document.getElementById("image_paragraph").textContent == ":-:")
-    {
-        alert("You solved it!");
-    }
+    isSolved();
 }
+
 function ChangeColor() {
     document.getElementById("image_paragraph").style.color = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
 }
 function ResetText() {
     document.getElementById("image_paragraph").textContent = "";
+}
+function isSolved() {
     if(document.getElementById("image_paragraph").textContent == ":-:")
     {
-        alert("You solved it!");
+        openSolvedPage();
     }
 }
-function openNewPage() {
+function openSolvedPage() {
   window.open("win.html", "_blank");
 }
 </script>
