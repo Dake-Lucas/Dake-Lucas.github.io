@@ -19,6 +19,7 @@
         <button onclick="AddDash()">Add -</button>
         <button onclick="AddColon()">Add :</button>
         <button onclick="AddForwardSlash()">Add /</button>
+         <button onclick="ResetText()">Change Color</button>
         <button onclick="ResetText()">Reset Text</button>
     </p2>
     <p3 id = image_paragraph>
@@ -44,6 +45,9 @@ function AddColon() {
 }
 function AddForwardSlash() {
     document.getElementById("paragraph_1").style.color = "red";
+}
+function ChangeColor() {
+    document.getElementById("paragraph_1").style.color = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
 }
 function ResetText() {
     document.getElementById("paragraph_1").style.color = "red";
