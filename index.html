@@ -67,7 +67,8 @@ function AddForwardSlash() {
     }
 }
 function AddNewLine() {
-    document.getElementById("image_paragraph").innerHTML += "<br>l";
+    document.getElementById("image_paragraph").textContent += "\n";
+    document.getElementById("image_paragraph").style.whiteSpace = "pre-wrap";
     if(document.getElementById("image_paragraph").textContent == ":-:")
     {
         alert("You solved it!");
