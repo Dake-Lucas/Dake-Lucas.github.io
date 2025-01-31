@@ -20,6 +20,7 @@
         <button onclick="AddDash()">Add -</button>
         <button onclick="AddColon()">Add :</button>
         <button onclick="AddForwardSlash()">Add /</button>
+         <button onclick="ChangeColor()">Change Color</button>
         <button onclick="AddNewLine()">Add New Line</button>
         <button onclick="ResetText()">Reset Text</button>
         <br>
@@ -71,6 +72,9 @@ function AddNewLine() {
     {
         alert("You solved it!");
     }
+}
+function ChangeColor() {
+    document.getElementById("image_paragraph").style.color = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
 }
 function ResetText() {
     document.getElementById("image_paragraph").textContent = "";
