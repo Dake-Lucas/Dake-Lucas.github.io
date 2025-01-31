@@ -14,12 +14,15 @@
         Use the buttons to create a photo and try to find the hidden suprise!
     </p1>
     <p2 id = paragraph_2>
+        <br>
         <button onclick="AddBackSlash()">Add \</button>
         <button onclick="AddDot()">Add .</button>
         <button onclick="AddDash()">Add -</button>
         <button onclick="AddColon()">Add :</button>
         <button onclick="AddForwardSlash()">Add /</button>
+        <button onclick="AddNewLine()">Add New Line</button>
         <button onclick="ResetText()">Reset Text</button>
+        <br>
     </p2>
     <p3 id = image_paragraph>
     </p3>
@@ -29,23 +32,51 @@
 <script>
 function AddBackSlash() {
     document.getElementById("image_paragraph").textContent += "\\";
+    if(document.getElementById("image_paragraph").textContent == ":-:")
+    {
+        alert("You solved it!");
+    }
 }
 function AddDot() {
-    document.getElementById("paragraph_1").style.color = "red";
+    document.getElementById("image_paragraph").textContent += ".";
+    if(document.getElementById("image_paragraph").textContent == ":-:")
+    {
+        alert("You solved it!");
+    }
 }
 function AddDash() {
-    document.getElementById("paragraph_1").style.color = "red";
-}
-function AddDash() {
-    document.getElementById("paragraph_1").style.color = "red";
+    document.getElementById("image_paragraph").textContent += "-";
+    if(document.getElementById("image_paragraph").textContent == ":-:")
+    {
+        alert("You solved it!");
+    }
 }
 function AddColon() {
-    document.getElementById("paragraph_1").style.color = "red";
+    document.getElementById("image_paragraph").textContent += ":";
+    if(document.getElementById("image_paragraph").textContent == ":-:")
+    {
+        alert("You solved it!");
+    }
 }
 function AddForwardSlash() {
-    document.getElementById("paragraph_1").style.color = "red";
+    document.getElementById("image_paragraph").textContent += "/";
+    if(document.getElementById("image_paragraph").textContent == ":-:")
+    {
+        alert("You solved it!");
+    }
+}
+function AddNewLine() {
+    document.getElementById("image_paragraph").innerHTML += "<br>l";
+    if(document.getElementById("image_paragraph").textContent == ":-:")
+    {
+        alert("You solved it!");
+    }
 }
 function ResetText() {
-    document.getElementById("paragraph_1").style.color = "red";
+    document.getElementById("image_paragraph").textContent = "";
+    if(document.getElementById("image_paragraph").textContent == ":-:")
+    {
+        alert("You solved it!");
+    }
 }
 </script>
